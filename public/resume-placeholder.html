@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      padding: 48px 40px;
+      font-family: 'Segoe UI', -apple-system, Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+    .header { border-bottom: 3px solid #8B5CF6; padding-bottom: 20px; margin-bottom: 28px; }
+    h1 { font-size: 30px; margin: 0 0 4px 0; letter-spacing: -0.5px; }
+    .subtitle { font-size: 14px; color: #6B7280; }
+    .contact-row { display: flex; gap: 20px; margin-top: 10px; font-size: 11px; color: #9CA3AF; }
+    .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8B5CF6; border-bottom: 1px solid #E5E7EB; padding-bottom: 5px; margin: 28px 0 14px 0; font-weight: 600; }
+    .job { margin-bottom: 18px; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .job-title { font-size: 15px; font-weight: 700; }
+    .job-date { font-size: 11px; color: #9CA3AF; }
+    .job-company { font-size: 12px; color: #8B5CF6; margin: 2px 0 6px 0; }
+    ul { padding-left: 18px; font-size: 12.5px; color: #4B5563; }
+    li { margin-bottom: 3px; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+    .skill-cat { font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 2px; }
+    .skill-items { font-size: 11px; color: #6B7280; }
+    .education { margin-top: 6px; }
+    .edu-line { display: flex; justify-content: space-between; font-size: 13px; }
+    .edu-school { color: #6B7280; font-size: 12px; }
+    .placeholder-banner {
+      text-align: center; padding: 32px; color: #9CA3AF; font-size: 13px;
+      border: 2px dashed #D1D5DB; border-radius: 8px; margin-top: 36px; background: #FAFAFA;
+    }
+    .placeholder-banner strong { display: block; color: #8B5CF6; font-size: 15px; margin-bottom: 6px; }
+    .placeholder-banner code { background: #F3F4F6; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Aryan Kumar</h1>
+    <p class="subtitle">AI Engineer</p>
+    <div class="contact-row">
+      <span>📍 New Delhi, IN</span>
+      <span>📧 work.aryan31@gmail.com</span>
+      <span>🔗 https://github.com/Aryankr31</span>
+      <span>🔗 https://www.linkedin.com/in/aryan-kumar-194947268/</span>
+    </div>
+  </div>
+
+  <div class="section-title">Summary</div>
+  <p style="font-size: 13px; color: #4B5563;">
+    Senior AI Engineer with 8+ years building scalable ML infrastructure, fine-tuning LLMs for specialized domains, and architecting production-grade RAG systems. Published researcher with 4 CVPR/NeurIPS papers.
+  </p>
+
+  <div class="section-title">Professional Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <h3 class="job-title">Principal AI Architect</h3>
+      <span class="job-date">2021 — Present</span>
+    </div>
+    <p class="job-company">Neural Corp · New Delhi, IN</p>
+    <ul>
+      <li>Led transition from legacy predictive models to generative agentic workflows</li>
+      <li>Reduced inference latency by 60% through custom kernel implementations and distributed caching</li>
+      <li>Mentoring a team of 12 Machine Learning Engineers across 3 product verticals</li>
+      <li>Designed multi-agent orchestration framework serving 2M+ daily requests</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <h3 class="job-title">Senior Machine Learning Engineer</h3>
+      <span class="job-date">2018 — 2021</span>
+    </div>
+    <p class="job-company">DataFlow.io · New York, NY</p>
+    <ul>
+      <li>Architected real-time anomaly detection system handling 1M+ requests per second</li>
+      <li>Built internal ML-Ops platform standardizing model deployment across organization</li>
+      <li>Reduced model training costs by 40% through efficient GPU scheduling on Kubernetes</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <h3 class="job-title">Research Scientist</h3>
+      <span class="job-date">2015 — 2018</span>
+    </div>
+    <p class="job-company">Cybernetics Lab · MIT</p>
+    <ul>
+      <li>Published 4 papers on Reinforcement Learning at CVPR/NeurIPS</li>
+      <li>Developed autonomous agent navigation in high-fidelity simulations</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div><p class="skill-cat">AI & ML</p><p class="skill-items">LLMs, Transformers, PyTorch, TensorFlow, RL, Diffusion Models</p></div>
+    <div><p class="skill-cat">Infrastructure</p><p class="skill-items">Kubernetes (GPU), CUDA, Triton, TensorRT, Docker, CI/CD</p></div>
+    <div><p class="skill-cat">LLM Ecosystem</p><p class="skill-items">LangChain, LlamaIndex, Pinecone, QLoRA, RLHF, Prompt Engineering</p></div>
+    <div><p class="skill-cat">Data Engineering</p><p class="skill-items">Apache Spark, Flink, Kafka, Delta Lake, Airflow, dbt</p></div>
+  </div>
+
+  <div class="section-title">Education</div>
+  <div class="education">
+    <div class="edu-line">
+      <strong style="font-size: 13px;">M.S. Computer Science — Machine Learning</strong>
+      <span class="job-date">2013 — 2015</span>
+    </div>
+    <p class="edu-school">Massachusetts Institute of Technology</p>
+  </div>
+
+  <div class="placeholder-banner">
+    <strong>📄 This is a placeholder resume</strong>
+    Replace this file with your actual resume PDF at:<br>
+    <code>public/resume.pdf</code>
+  </div>
+</body>
+</html>
