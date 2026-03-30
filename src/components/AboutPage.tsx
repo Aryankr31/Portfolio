@@ -201,6 +201,9 @@ function PingButton() {
     const id = Date.now();
     setPings(p => [...p, id]);
     setTimeout(() => setPings(p => p.filter(x => x !== id)), 1500);
+    
+    // Send email
+    window.location.href = 'mailto:work.aryan31@gmail.com?subject=Portfolio Ping&body=Hey, I visited your portfolio!';
   }, []);
 
   return (
@@ -223,6 +226,7 @@ function PingButton() {
     </div>
   );
 }
+
 
 /* ─────────────── MAIN PAGE ─────────────── */
 export default function AboutPage() {
