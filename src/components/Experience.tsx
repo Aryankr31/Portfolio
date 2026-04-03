@@ -12,8 +12,8 @@ interface TimelineEntry {
 
 const experiences: TimelineEntry[] = [
   {
-    title: 'Business Analyst',
-    period: ' March 2026 — PRESENT',
+    title: 'Solutions Engineer',
+    period: ' April 2026 — PRESENT',
     company: 'SINCH INDIA',
     description:
       'Working on CPaaS and engagement products by creating BRDs/PRDs, analyzing APIs and workflows, and aligning product, engineering, and operations for data-driven feature delivery.',
